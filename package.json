@@ -1,0 +1,39 @@
+{
+    "name": "tapper",
+    "version": "1.0.0",
+    "description": "A fast, web-based clicking game",
+    "keywords": [
+      "tap",
+      "clicking",
+      "game",
+      "fast",
+      "speed",
+      "browser"
+    ],
+    "homepage": "https://github.com/jarne/Tapper",
+    "bugs": {
+      "url": "https://github.com/jarne/Tapper/issues"
+    },
+    "license": "MIT",
+    "author": {
+      "name": "Jarne",
+      "url": "https://github.com/jarne"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/jarne/Tapper.git"
+    },
+    "scripts": {
+      "assets": "gulp",
+      "publish": "./public.sh",
+      "build": "gulp && ./public.sh"
+    },
+    "devDependencies": {
+      "bootstrap": "^4.3",
+      "gulp": "^4.0",
+      "gulp-concat": "^2.6",
+      "gulp-clean-css": "^4.2",
+      "gulp-minify": "^3.1",
+      "jquery": "^3.4"
+    }
+}
