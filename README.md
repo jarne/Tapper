@@ -5,7 +5,7 @@
 
 <p align="center">
     <a href="https://github.com/jarne/Tapper/blob/master/package.json">
-        <img src="https://img.shields.io/github/package-json/v/jarne/Chat.svg" alt="Package version">
+        <img src="https://img.shields.io/github/package-json/v/jarne/Tapper.svg" alt="Package version">
     </a>
     <a href="https://app.netlify.com/sites/clever-dijkstra-9bf79e/deploys">
         <img src="https://api.netlify.com/api/v1/badges/8b4e8370-8594-4598-b671-4c44afb6320b/deploy-status" alt="Netlify Status">
