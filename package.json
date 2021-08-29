@@ -3,37 +3,39 @@
     "version": "1.0.1",
     "description": "A fast, web-based clicking game",
     "keywords": [
-      "tap",
-      "clicking",
-      "game",
-      "fast",
-      "speed",
-      "browser"
+        "tap",
+        "clicking",
+        "game",
+        "fast",
+        "speed",
+        "browser"
     ],
     "homepage": "https://github.com/jarne/Tapper",
     "bugs": {
-      "url": "https://github.com/jarne/Tapper/issues"
+        "url": "https://github.com/jarne/Tapper/issues"
     },
     "license": "MIT",
     "author": {
-      "name": "Jarne",
-      "url": "https://github.com/jarne"
+        "name": "Jarne",
+        "url": "https://github.com/jarne"
     },
     "repository": {
-      "type": "git",
-      "url": "https://github.com/jarne/Tapper.git"
+        "type": "git",
+        "url": "https://github.com/jarne/Tapper.git"
     },
     "scripts": {
-      "assets": "gulp",
-      "publish": "./public.sh",
-      "build": "gulp && ./public.sh"
+        "assets": "gulp",
+        "format": "./node_modules/.bin/prettier --write \"**/*.{js,jsx,ts,tsx,json}\"",
+        "publish": "./public.sh",
+        "build": "gulp && ./public.sh"
     },
     "devDependencies": {
-      "bootstrap": "^5.1",
-      "gulp": "^4.0",
-      "gulp-concat": "^2.6",
-      "gulp-clean-css": "^4.3",
-      "gulp-minify": "^3.1",
-      "jquery": "^3.6"
+        "bootstrap": "^5.1",
+        "gulp": "^4.0",
+        "gulp-concat": "^2.6",
+        "gulp-clean-css": "^4.3",
+        "gulp-minify": "^3.1",
+        "jquery": "^3.6",
+        "prettier": "^2.3"
     }
 }
