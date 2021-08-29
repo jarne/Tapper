@@ -13,9 +13,6 @@
     <a href="https://github.com/jarne/Tapper/blob/master/LICENSE">
         <img src="https://img.shields.io/github/license/jarne/Tapper.svg" alt="License">
     </a>
-    <a href="https://gitter.im/jarne/Tapper">
-        <img src="https://img.shields.io/gitter/room/jarne/Tapper.svg" alt="Gitter">
-    </a>
 </p>
 
 ##
@@ -30,7 +27,7 @@ Tapper is a very simple web-based clicking game, it's about to press the space k
 
 Here's a screenshot of the page:
 
-<img src=".github/.media/screenshot.png" alt="Screenshot">
+<img src=".github/.media/screenshot.png" alt="Screenshot of the game">
 
 ## 🖥 Usage
 First, clone the repository using:
