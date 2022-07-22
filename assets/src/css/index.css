@@ -2,7 +2,9 @@
  * Tapper | page style
  */
 
-html, body, .container {
+html,
+body,
+.container {
     height: 100%;
 }
 
