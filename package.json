@@ -1,6 +1,6 @@
 {
     "name": "tapper",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A fast, web-based clicking game",
     "keywords": [
         "tap",
@@ -24,18 +24,18 @@
         "url": "https://github.com/jarne/Tapper.git"
     },
     "scripts": {
-        "assets": "gulp",
-        "format": "./node_modules/.bin/prettier --write \"**/*.{js,css,json}\"",
-        "publish": "./public.sh",
-        "build": "gulp && ./public.sh"
+        "start": "./node_modules/.bin/parcel index.html",
+        "build": "./node_modules/.bin/parcel build index.html",
+        "format": "./node_modules/.bin/prettier --write \"**/*.{js,css,scss,html,json,yml,md}\""
+    },
+    "dependencies": {
+        "@parcel/transformer-image": "^2.6",
+        "@parcel/transformer-sass": "^2.6",
+        "bootstrap": "^5.2",
+        "cssnano": "^5.1",
+        "parcel": "^2.6"
     },
     "devDependencies": {
-        "bootstrap": "^5.2",
-        "gulp": "^4.0",
-        "gulp-concat": "^2.6",
-        "gulp-clean-css": "^4.3",
-        "gulp-minify": "^3.1",
-        "jquery": "^3.6",
         "prettier": "^2.7"
     }
 }

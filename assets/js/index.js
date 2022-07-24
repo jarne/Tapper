@@ -2,10 +2,10 @@
  * Tapper | client script
  */
 
-const avgClickTimeField = $("#avgClickTime");
+const avgClickTimeField = document.getElementById("avgClickTime");
 
-const levelIcon = $("#levelIcon");
-const levelDescription = $("#levelDescription");
+const levelIcon = document.getElementById("levelIcon");
+const levelDescription = document.getElementById("levelDescription");
 
 let lastTimestamps = [];
 
@@ -38,28 +38,26 @@ function calcAvgClickTime() {
     return avgInterval;
 }
 
+function renderResult(icon, description) {
+    levelIcon.innerText = icon;
+    levelDescription.innerText = description;
+}
+
 function rateResult(clkTime) {
     if (clkTime > 0.3) {
-        levelIcon.text("👻");
-        levelDescription.text("noob");
+        renderResult("👻", "noob");
     } else if (clkTime > 0.225) {
-        levelIcon.text("🙃");
-        levelDescription.text("beginner");
+        renderResult("🙃", "beginner");
     } else if (clkTime > 0.2) {
-        levelIcon.text("🤨");
-        levelDescription.text("player");
+        renderResult("🤨", "player");
     } else if (clkTime > 0.17) {
-        levelIcon.text("🥳");
-        levelDescription.text("better player");
+        renderResult("🥳", "better player");
     } else if (clkTime > 0.16) {
-        levelIcon.text("🤓");
-        levelDescription.text("nearly pro");
+        renderResult("🤓", "nearly pro");
     } else if (clkTime > 0.15) {
-        levelIcon.text("😎");
-        levelDescription.text("pro");
+        renderResult("😎", "pro");
     } else if (clkTime < 0.15) {
-        levelIcon.text("🤖");
-        levelDescription.text("der gerät");
+        renderResult("🤖", "der gerät");
     }
 }
 
@@ -72,13 +70,13 @@ function triggerAvgTimeUpdate() {
 
     const roundedAvgClickTime = Math.round(avgClickTime * 1000) / 1000;
 
-    avgClickTimeField.text(roundedAvgClickTime);
+    avgClickTimeField.innerText = roundedAvgClickTime;
 
     rateResult(roundedAvgClickTime);
 }
 
-$(document).keypress((event) => {
-    if (event.which === 32) {
+document.addEventListener("keydown", (ev) => {
+    if (ev.code === "Space") {
         lastTimestamps.push(new Date());
     }
 

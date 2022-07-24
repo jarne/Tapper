@@ -2,5 +2,7 @@
 /yarn.lock
 /node_modules
 
-# Built files
-/assets/dest
+# Parcel build files
+/.parcel-cache
+/dist
+

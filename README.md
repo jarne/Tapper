@@ -23,6 +23,7 @@
 [• License](#%EF%B8%8F-license)
 
 ## 📙 Description
+
 Tapper is a very simple web-based clicking game, it's about to press the space key of your keyboard as fast as possible and it'll show you a rank depending on how fast you are.
 
 Here's a screenshot of the page:
@@ -30,6 +31,7 @@ Here's a screenshot of the page:
 <img src=".github/.media/screenshot.png" alt="Screenshot of the game">
 
 ## 🖥 Usage
+
 First, clone the repository using:
 
 ```
@@ -51,9 +53,11 @@ $ yarn build
 The built website will be saved in the `public`-folder, just open the `index.html`-file in your browser.
 
 ## 🙋‍ Contribution
+
 Contributions are always very welcome! It's completely equally if you're a beginner or a more experienced developer.
 
 Thanks for your interest 🎉👍!
 
 ## 👨‍⚖️ License
+
 [MIT](https://github.com/jarne/Tapper/blob/master/LICENSE)
