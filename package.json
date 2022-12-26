@@ -29,7 +29,6 @@
         "format": "prettier --write \"**/*.{js,css,html,json,yml,md}\""
     },
     "dependencies": {
-        "@babel/core": "^7.20",
         "bootstrap": "^5.2",
         "cssnano": "^5.1",
         "parcel": "^2.8",
