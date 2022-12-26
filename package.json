@@ -24,18 +24,18 @@
         "url": "https://github.com/jarne/Tapper.git"
     },
     "scripts": {
-        "start": "./node_modules/.bin/parcel index.html",
-        "build": "./node_modules/.bin/parcel build index.html",
-        "format": "./node_modules/.bin/prettier --write \"**/*.{js,css,scss,html,json,yml,md}\""
+        "start": "parcel index.html",
+        "build": "parcel build index.html",
+        "format": "prettier --write \"**/*.{js,css,html,json,yml,md}\""
     },
     "dependencies": {
-        "@parcel/transformer-image": "^2.6",
-        "@parcel/transformer-sass": "^2.6",
+        "@babel/core": "^7.20",
         "bootstrap": "^5.2",
         "cssnano": "^5.1",
-        "parcel": "^2.6"
+        "parcel": "^2.8",
+        "postcss": "^8.4"
     },
     "devDependencies": {
-        "prettier": "^2.7"
+        "prettier": "^2.8"
     }
 }
