@@ -17,14 +17,13 @@
 
 ##
 
-[• Description](#-description)  
-[• Usage](#-usage)  
-[• Contribution](#-contribution)  
-[• License](#%EF%B8%8F-license)
+[Description](#-description) | [Usage](#-usage) | [Contribution](#-contribution) | [License](#%EF%B8%8F-license)
 
 ## 📙 Description
 
-Tapper is a very simple web-based clicking game, it's about to press the space key of your keyboard as fast as possible and it'll show you a rank depending on how fast you are.
+Tapper is a very simple web-based clicking game.
+The goal is to press the space key of your keyboard as fast as possible,
+and it shows you a rank depending on how fast you are.
 
 Here's a screenshot of the page:
 
@@ -32,25 +31,19 @@ Here's a screenshot of the page:
 
 ## 🖥 Usage
 
-First, clone the repository using:
-
-```
-$ git clone https://github.com/jarne/Tapper.git
-```
-
-Then, install the dependencies using:
+Clone the repository and install the dependencies using:
 
 ```
 $ yarn install
 ```
 
-Finally, run:
+Then run this command to build the web app:
 
 ```
 $ yarn build
 ```
 
-The built website will be saved in the `public`-folder, just open the `index.html`-file in your browser.
+The built website will be available in the `dist`-folder, just open the `index.html`-file in your browser or upload the files to a web server.
 
 ## 🙋‍ Contribution
 
